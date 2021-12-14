@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫雷游戏</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/temple.css">
+    <link rel="stylesheet" href="../css/mines.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/jq_click.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">
+            <a href="#">
+                <img src="../resource/img/logo.png" alt="😅">
+            </a>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./defeat_france.html">
+                        <!-- 法律普及 -->
+                        <span>普法战争</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./sweat.html">
+                        <!-- 健身运动 -->
+                        <span>很难不流汗</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./funny_news.html">
+                        <span>魔怔资讯</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./sweep_mines.html">
+                        <span>boom!绷不住了</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./win.html">
+                        <span>赢麻了</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login_registration.html">
+                        <!-- 登录注册 -->
+                        <span>打不过就加入我们</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="box-top"></div> -->
+    <div id="navi">
+        <ul id="menu">
+            <!-- 自我介绍 -->
+            <li><a href="./about_me.html">版主</a></li>
+            <li><a href="./course_summary.html">总结</a></li>
+            <li><a href="./reward.html">打赏</a></li>
+            <li><a href="#">入站</a>
+                <ul>
+                    <li><a href="#">黄金席位</a></li>
+                    <li><a href="#">广告招商</a></li>
+                    <li><a href="#">打赏留言</a></li>
+                </ul>
+            </li>
+            <li><a href="#">必看</a>
+                <ul>
+                    <li><a href="#">曝光量高</a></li>
+                    <li><a href="#">信誉保障</a></li>
+                    <li><a href="#">邀您合作</a></li>
+                </ul>
+            </li>
+            <li><a href="#">游戏</a>
+                <ul>
+                    <li><a href="#">首位推荐</a></li>
+                    <li><a href="#">虚位以待</a></li>
+                    <li><a href="http://www.4399.com/flash/210650.htm">造梦西游</a></li>
+                </ul>
+            </li>
+            <li><a href="#">动画</a>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss36177?from_spmid=666.4.mylist.6">工作细胞</a></li>
+                    <li><a href="#">招商旺位</a></li>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ep424613?from_spmid=666.4.banner.2">(广告)国王排名</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">鬼畜</a>
+                <ul>
+                    <li><a
+                            href="https://www.bilibili.com/video/BV1pi4y147tQ?from=search&seid=3944943207025852861&spm_id_from=333.337.0.0">最
+                            强 法 海</a></li>
+                    <li><a
+                            href="https://www.bilibili.com/video/BV1G741127uC/?spm_id_from=333.788.recommend_more_video.10">三
+                            国 不 裂</a></li>
+                    <li><a href="#">等 待 推 广</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- 贴片a-d -->
+    <!-- <div><img src="resource/img/a_a.gif" alt="xdd" class="share"></div> -->
+    <div class="return-top"><a href="#" title="返回顶部"> ^</a></div>
+    <div class="box-top"></div>
+    <div class="main">
+        <!-- 可切换内容 -->
+        <h1 align="center">扫雷小游戏</h1>
+        <div class="box-top"></div>
+        <div class="level">
+            <button class="active">初级</button>
+            <button>中级</button>
+            <button>高级</button>
+            <button>重新开始</button>
+        </div>
+        <div class="gameBox"></div>
+        <div class="info">剩余雷数:<span class="mineNum"></span></div>
+        <!-- 可切换内容 -->
+    </div>
+    <div class="under">
+        <div class="deep">
+            <span>Copyright ©1982-2077 😅版权所有 About Unbengable | 公司地址：<a
+                    href="https://map.baidu.com/search/%E6%88%90%E6%B4%9B%E8%B7%AF2025%E5%8F%B7/@11598774.06162244,3566753.3313812152,14.87z?querytype=s&da_src=shareurl&wd=%E6%88%90%E6%B4%9B%E8%B7%AF2025%E5%8F%B7&c=1&src=0&pn=0&sug=0&l=5&b=(6610419.59998193,1843446.6299832668;19308019.59998193,7807222.629983267)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&device_ratio=2"
+                    target="_blank" id="address">四川省成都市龙泉驿区成洛大道2025号</a> | 联系方式：tonylaroy@foxmail.com
+            </span>
+        </div>
+    </div>
+    <script src="../js/sweep_mine.js"></script>
+</body>
+
+</html>
